@@ -32,7 +32,6 @@ if($ENV{ROS_VERSION} STREQUAL "1")
   ## is used, also find other catkin packages
   find_package(catkin REQUIRED COMPONENTS
     roscpp
-    rospy
     sensor_msgs
     std_msgs
     message_generation
@@ -71,10 +70,7 @@ if($ENV{ROS_VERSION} STREQUAL "1")
   ## LIBRARIES: libraries you create in this project that dependent projects als    o need
   ## CATKIN_DEPENDS: catkin_packages dependent projects also need
   ## DEPENDS: system dependencies of this project that dependent projects also n    eed
-  catkin_package(CATKIN_DEPENDS
-    roscpp rospy std_msgs message_runtime
-    pcl_ros
-  )
+  catkin_package()
 
   #---------------------------------------------------------------------------------------
   # Set default build to release
