@@ -27,6 +27,9 @@
 
 #include "include/livox_ros_driver2.h"
 
+#include "pcl/point_cloud.h"
+#include "pcl/point_types.h"
+
 #include "driver_node.h"
 #include "lds.h"
 

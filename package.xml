@@ -13,6 +13,7 @@
     <buildtool_depend condition="$ROS_VERSION == 1">catkin</buildtool_depend>
     <build_depend condition="$ROS_VERSION == 1">message_generation</build_depend>
     <depend condition="$ROS_VERSION == 1">roscpp</depend>
+    <depend condition="$ROS_VERSION == 1">pcl_ros</depend>
     <exec_depend condition="$ROS_VERSION == 1">message_runtime</exec_depend>
     <exec_depend condition="$ROS_VERSION == 1">rosbag</exec_depend>
 
@@ -32,8 +33,7 @@
     <!-- ROS1/2 dependencies -->
     <depend>std_msgs</depend>
     <depend>sensor_msgs</depend>
-    <depend>pcl_conversions</depend>
-    <depend>pcl_ros</depend>
+    <depend>libpcl-all-dev</depend>
     <depend>git</depend>
     <depend>apr</depend>
 
