@@ -1,4 +1,4 @@
-# judge which cmake codes to use 
+# judge which cmake codes to use
 if($ENV{ROS_VERSION} STREQUAL "1")
 
   # Copyright(c) 2019 livoxtech limited.
@@ -56,10 +56,10 @@ if($ENV{ROS_VERSION} STREQUAL "1")
 
   find_package(PkgConfig)
   pkg_check_modules(APR apr-1)
-  if (APR_FOUND)
+  if(APR_FOUND)
     message(${APR_INCLUDE_DIRS})
     message(${APR_LIBRARIES})
-  endif (APR_FOUND)
+  endif()
 
   ###################################
   ## catkin specific configuration ##
@@ -191,7 +191,7 @@ if($ENV{ROS_VERSION} STREQUAL "1")
   #---------------------------------------------------------------------------------------
 
 
-else($ENV{ROS_VERSION} STREQUAL "2")
+elseif($ENV{ROS_VERSION} STREQUAL "2")
 
   # Copyright(c) 2020 livoxtech limited.
 
@@ -238,10 +238,10 @@ else($ENV{ROS_VERSION} STREQUAL "2")
   # check apr
   find_package(PkgConfig)
   pkg_check_modules(APR apr-1)
-  if (APR_FOUND)
+  if(APR_FOUND)
     message(${APR_INCLUDE_DIRS})
     message(${APR_LIBRARIES})
-  endif (APR_FOUND)
+  endif()
 
   # generate custom msg headers
   set(LIVOX_INTERFACES livox_interfaces2)
